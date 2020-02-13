@@ -1,0 +1,63 @@
+.container {
+  width: 80vw;
+  justify-content: left;
+  margin: auto;
+}
+.header {
+  align-self: center;
+  text-align: center;
+}
+.bpMain {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  text-align: left;
+  align-items: flex-end;
+}
+.mainSub {
+  align-self: stretch;
+}
+.mainHd {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  align-items: left;
+}
+.bpSD, .sdSub {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 10px;
+}
+.sdAuthor {
+  flex-grow: 1;
+  background-color: #E6E6F5;
+  margin-bottom: 20px;
+}
+.sdAuthInfo p {
+  text-align: left;
+}
+.sdLinks ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+p {
+  font-size: 18px;
+  line-height: 1.65em;
+  word-wrap: break-word;
+}
+.hdNav {
+  text-align: left;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.mainHd h2 {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.mainHd p {
+  margin-top: 0;
+  font-size: 12px;
+}
