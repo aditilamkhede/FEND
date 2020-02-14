@@ -1,56 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis|Montserrat|Odibee+Sans|Open+Sans|Raleway|Roboto&display=swap');
+@import "media.css";
 body {
   font-family: 'Raleway', sans-serif;
   margin: 0;
   background-color: white;
-}
-.container {
-    display: grid;
-    width: 100vw;
-    /*margin: 20px auto;*/
-    grid-template-columns: repeat(6, 1fr) 10vw;
-    grid-template-rows: 20vh 70vh 10vh;
-    grid-template-areas: "hd hd hd hd hd hd hd hd"
-    "main main main main sd sd sd sd"
-    "ft ft ft ft ft ft ft ft";
-}
-
-@media (min-width: 600px) and (max-width: 1100px) {
-  .container {
-    display: grid;
-    width: 100vw;
-    /*margin: 20px auto;*/
-    grid-template-columns: repeat(6, 1fr) 10vw;
-    grid-template-rows: 10vh 80vh 10vh;
-    grid-template-areas: "hd hd hd hd hd hd hd hd"
-    "main main main main main sd sd sd"
-    "ft ft ft ft ft ft ft ft";
-  }
-}
-
-@media (min-width: 1100px) {
-  .container {
-    display: grid;
-    width: 100vw;
-    /*margin: 20px auto;*/
-    grid-template-columns: repeat(6, 1fr) 10vw;
-    grid-template-rows: 10vh 80vh 10vh;
-    grid-template-areas: "hd hd hd hd hd hd hd hd"
-    "main main main main main main sd sd"
-    "ft ft ft ft ft ft ft ft";
-  }
-}
-.header {
-  grid-area: hd;
-}
-.main {
-  grid-area: main;
-}
-.sidebar {
-  grid-area: sd;
-}
-.footer {
-  grid-area: ft;
 }
 .box {
 
@@ -78,7 +31,7 @@ body {
   border-top-left-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
   color: white;
-  background-color: #adbae1;
+  /*background-color: #adbae1;*/
 }
 .menu, .footer {
   display: flex;
@@ -148,10 +101,9 @@ p {
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
-
 }
 #dvTech {
-  background-image: url(../Images/Grace_Hopper.jpg);
+  background-image: url(../Images/grace_hopper.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: white;

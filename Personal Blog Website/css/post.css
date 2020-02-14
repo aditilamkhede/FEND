@@ -1,7 +1,7 @@
 .container {
   width: 80vw;
   justify-content: left;
-  margin: auto;
+  margin: 20px auto;
 }
 .header {
   align-self: center;
@@ -34,9 +34,11 @@
   flex-grow: 1;
   background-color: #E6E6F5;
   margin-bottom: 20px;
+  text-align: center;
+
 }
-.sdAuthInfo p {
-  text-align: left;
+.sdAuthInfo h3 {
+  margin-top: 0;
 }
 .sdLinks ul {
   list-style: none;
@@ -60,4 +62,7 @@ p {
 .mainHd p {
   margin-top: 0;
   font-size: 12px;
+}
+figure {
+  text-align: center;
 }
