@@ -33,9 +33,10 @@
 .sdAuthor {
   flex-grow: 1;
   background-color: #E6E6F5;
-  margin-bottom: 20px;
   text-align: center;
-
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
 }
 .sdAuthInfo h3 {
   margin-top: 0;
@@ -65,4 +66,9 @@ p {
 }
 figure {
   text-align: center;
+}
+figure a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
 }

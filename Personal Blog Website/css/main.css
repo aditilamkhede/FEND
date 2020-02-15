@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis|Montserrat|Odibee+Sans|Open+Sans|Raleway|Roboto&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 @import "media.css";
 body {
   font-family: 'Raleway', sans-serif;
@@ -79,9 +80,11 @@ body {
   list-style: none;
   padding-left: 0;
 }
-button {
+#btnSubscribe {
   height: 30px;
   width: 100px;
+}
+button {
   border-radius: 0.3rem;
   background-color: #4553BF;/*#7175AD;*/
   color: white;
@@ -92,9 +95,10 @@ p {
   margin-left: 5px;
   font-size: 13px;
 }
-.card h4 {
+.card h2 {
   text-align: left;
   margin-left: 5px;
+  margin-top: 5px;
 }
 #dvSc {
   background-image: url(../Images/Marie_Curie.jpg);
@@ -126,4 +130,51 @@ p {
   background-color: none;
   border-top-left-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
+}
+.frmMain {
+  background-color: #8A2BE2;
+  width: 100%;
+  height: 100%;
+}
+.frmModal {
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 38%;
+  top: 30%;
+  width: 20%; /* Full width */
+  height: 47%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #8A2BE2; /* Fallback color */ Full height */
+  border: solid 5px white;
+  border-radius: 1.5rem;
+  overflow: auto;
+  color: white;
+}
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.flex-child {
+  flex: 1;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 30%;
+}
+.flex-hd {
+  margin-bottom: 5px;
+}
+input {
+    width: 89%;
+    height: 47%;
+}
+#btnSubmit, #btnClose {
+  width: 89%;
+  height: 60%;
 }

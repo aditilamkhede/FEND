@@ -8,6 +8,15 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="../css/main.css">
+    <script type="text/javascript">
+      function OpenForm() {
+        document.getElementById("popupForm").style.display = "block";
+      }
+
+      function CloseForm() {
+        document.getElementById("popupForm").style.display = "none";
+      }
+    </script>
   </head>
   <body>
     <div class="container">
@@ -31,14 +40,14 @@
         <div class="nestedGrid">
           <div id="dvSc" class="card">
             <div class="dvScInfo">
-              <h4>Science</h4>
+              <h2>Science</h2>
               <p><a href="BlogPost.html"><u>Marie Curie</u></a><em> is the only women in history to win two Nobel Prizes.</em></p>
             </div>
             <!--<p>Madam Curie is the only women in history to win two Nobel Prizes. She was awarded both in 1903 and 1911 for her contributions to science. Her work on radioactivity has been of paramount importance to humankind. <a href="https://en.wikipedia.org/wiki/Marie_Curie">read more</a></p>-->
           </div>
           <div id="dvTech" class="card">
             <div class="dvTechInfo">
-              <h4>Technology</h4>
+              <h2>Technology</h2>
               <p><a href="BlogPost.html"><u>Grace Hopper</u></a><em>, a pioneer of computer programming and US Navy rear admiral.</em></p>
             </div>
 
@@ -48,13 +57,13 @@
           </div>
           <div id="dvEngg" class="card">
             <div class="dvEnggInfo">
-              <h4>Engineering</h4>
+              <h2>Engineering</h2>
               <p><a href="#">Lillian Moller Gilbreth</a> was an American psychologist and industrial engineer.</p>
             </div>
           </div>
           <div id="dvMath" class="card">
             <div class="dvMathInfo">
-              <h4>Mathematics</h4>
+              <h2>Mathematics</h2>
               <p><a href="https://en.wikipedia.org/wiki/Ada_Lovelace">Ada Lovelace</a> was an English mathematician
                 and writer, credited as being the very first computer programmer.</p>
             </div>
@@ -74,7 +83,31 @@
             <ul>
           </div>
           <div id="btnDiv" class="clsSd">
-            <button id="btnSubscribe" type="button" name="Subscribe">Subscribe</button>
+            <button id="btnSubscribe" type="submit" name="Subscribe" onclick="OpenForm()">Subscribe</button>
+          </div>
+          <div id="popupForm" class="frmModal">
+            <form class="frmMain" action="subscribe.html" method="post">
+              <div class="flex-wrapper">
+                <div class="flex-child flex-hd">
+                  <h3>Subscribe to our Blog</h3>
+                  <p>Join us for free to get subscription email</p>
+                </div>
+                <div class="flex-child">
+                  <!-- <label for="frmName">Name: </label> -->
+                  <input type="text" id="frmName" name="" value="" placeholder="Full Name" required>
+                </div>
+                <div class="flex-child">
+                  <!-- <label for="frmEmail">Email: </label> -->
+                  <input type="email" id="frmEmail" name="" value="" placeholder="Email" required>
+                </div>
+                <div class="flex-child">
+                  <button id="btnSubmit" type="submit" name="button">Submit</button>
+                </div>
+                <div class="flex-child">
+                  <button id="btnClose" type="button" name="button" onclick="CloseForm()">Close</button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
