@@ -1,0 +1,35 @@
+.menu, .footer {
+  display: flex;
+  flex-direction: row;
+  background-color: #8A2BE2;/*#455388;*/
+  /*border-radius: 1rem;*/
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.ftCopy {
+  color: white;
+  text-align: center;
+  margin-right: 1rem;
+}
+.ftName {
+  color: white;
+  text-align: left;
+  flex-grow: 1;
+  margin-left: 1rem;
+}
+.navItem {
+  width: 80px;
+}
+.logo {
+  flex: 1;
+  color: white;
+  font-size: 20px;
+  margin-left: 1rem;
+}
+.navItem a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+}

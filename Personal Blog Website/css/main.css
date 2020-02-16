@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis|Montserrat|Odibee+Sans|Open+Sans|Raleway|Roboto&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 @import "media.css";
-body {
+@import "common.css";
+@import "form.css";
+body, input, textarea, button {
   font-family: 'Raleway', sans-serif;
   margin: 0;
   background-color: white;
@@ -33,41 +35,6 @@ body {
   border-bottom-right-radius: 1.5rem;
   color: white;
   /*background-color: #adbae1;*/
-}
-.menu, .footer {
-  display: flex;
-  flex-direction: row;
-  background-color: #8A2BE2;/*#455388;
-  /*border-radius: 1rem;*/
-  justify-content: flex-end;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
-.ftCopy {
-  color: white;
-  text-align: center;
-  margin-right: 1rem;
-}
-.ftName {
-  color: white;
-  text-align: left;
-  flex-grow: 1;
-  margin-left: 1rem;
-}
-.navItem {
-  width: 80px;
-}
-.logo {
-  flex: 1;
-  color: white;
-  font-size: 20px;
-  margin-left: 1rem;
-}
-.navItem a {
-  text-decoration: none;
-  color: white;
-  font-size: 17px;
 }
 /*#btnDiv {
   margin-top:auto;
@@ -131,50 +98,47 @@ p {
   border-top-left-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
 }
-.frmMain {
-  background-color: #8A2BE2;
-  width: 100%;
-  height: 100%;
-}
-.frmModal {
-  display: none;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 38%;
-  top: 30%;
-  width: 20%; /* Full width */
-  height: 47%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: #8A2BE2; /* Fallback color */ Full height */
-  border: solid 5px white;
-  border-radius: 1.5rem;
-  overflow: auto;
-  color: white;
-}
-.flex-wrapper {
+/*  About Page Classes */
+.main-wrapper {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  justify-content: space-between;
-  width: 100%;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  align-content: flex-end;
+  justify-content: stretch;
+}
+article p {
+  font-size: 18px;
+  line-height: 1.65em;
+  word-wrap: break-word;
+}
+/* end About css clsses */
+/* Contact css classes */
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 80%;
+  text-align: center;
+  align-content: flex-end;
+  justify-content: stretch;
+}
+.frm-Contact {
+  width: 78%;
   height: 100%;
 }
-.flex-child {
-  flex: 1;
-  align-self: center;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-  height: 30%;
+#frmName, #frmEmail {
+    width: 76%;
+    height: 40%;
+    border-radius: 0.5rem;
+    font-size: 15px;
 }
-.flex-hd {
-  margin-bottom: 5px;
+#frmMessage {
+    width: 76%;
+    height: 96%;
+    border-radius: 0.5rem;
+    font-size: 15px;
 }
-input {
-    width: 89%;
-    height: 47%;
-}
-#btnSubmit, #btnClose {
-  width: 89%;
-  height: 60%;
-}
+/* end Contact css */

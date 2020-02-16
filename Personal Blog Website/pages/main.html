@@ -6,17 +6,11 @@
 
     <title>Women In STEM</title>
 
-    <!-- Styles -->
+    <!-- Link external files -->
     <link rel="stylesheet" href="../css/main.css">
-    <script type="text/javascript">
-      function OpenForm() {
-        document.getElementById("popupForm").style.display = "block";
-      }
+    <script type="text/javascript" src="../scripts/main.js"></script>
+    <!-- End -->
 
-      function CloseForm() {
-        document.getElementById("popupForm").style.display = "none";
-      }
-    </script>
   </head>
   <body>
     <div class="container">
@@ -26,13 +20,13 @@
             <h1>Women In STEM</h1>
           </div>
           <div class="navItem">
-            <a href="#">Home</a>
+            <a href="main.html">Home</a>
           </div>
           <div class="navItem">
-            <a href="#">About</a>
+            <a href="About.html">About</a>
           </div>
           <div class="navItem">
-            <a href="#">Contact</a>
+            <a href="Contact.html">Contact</a>
           </div>
         </nav>
       </div>
@@ -43,17 +37,12 @@
               <h2>Science</h2>
               <p><a href="BlogPost.html"><u>Marie Curie</u></a><em> is the only women in history to win two Nobel Prizes.</em></p>
             </div>
-            <!--<p>Madam Curie is the only women in history to win two Nobel Prizes. She was awarded both in 1903 and 1911 for her contributions to science. Her work on radioactivity has been of paramount importance to humankind. <a href="https://en.wikipedia.org/wiki/Marie_Curie">read more</a></p>-->
           </div>
           <div id="dvTech" class="card">
             <div class="dvTechInfo">
               <h2>Technology</h2>
               <p><a href="BlogPost.html"><u>Grace Hopper</u></a><em>, a pioneer of computer programming and US Navy rear admiral.</em></p>
             </div>
-
-
-            <!--<p>Rear Admiral Grace Murray Hopper was at the forefront of computer and programming language development from the 1930s through the 1980s. Hopper's legacy is still honored by the annual Grace Hopper Celebration of Women in Computing Conference. <a href="https://en.wikipedia.org/wiki/Grace_Hopper">read more</a></p>
-            -->
           </div>
           <div id="dvEngg" class="card">
             <div class="dvEnggInfo">
@@ -64,7 +53,7 @@
           <div id="dvMath" class="card">
             <div class="dvMathInfo">
               <h2>Mathematics</h2>
-              <p><a href="https://en.wikipedia.org/wiki/Ada_Lovelace">Ada Lovelace</a> was an English mathematician
+              <p><a href="https://en.wikipedia.org/wiki/Ada_Lovelace" target="_blank">Ada Lovelace</a> was an English mathematician
                 and writer, credited as being the very first computer programmer.</p>
             </div>
           </div>
@@ -100,7 +89,7 @@
                   <!-- <label for="frmEmail">Email: </label> -->
                   <input type="email" id="frmEmail" name="" value="" placeholder="Email" required>
                 </div>
-                <div class="flex-child">
+                <div class="flex-child flex-btn">
                   <button id="btnSubmit" type="submit" name="button">Submit</button>
                 </div>
                 <div class="flex-child">
