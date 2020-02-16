@@ -5,3 +5,8 @@ function OpenForm() {
 function CloseForm() {
   document.getElementById("popupForm").style.display = "none";
 }
+
+function NavigateForm() {
+  alert("In Navigate");
+  window.location.href = "Subscribe.html";
+}
