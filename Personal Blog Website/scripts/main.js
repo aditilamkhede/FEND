@@ -7,6 +7,6 @@ function CloseForm() {
 }
 
 function NavigateForm() {
-  alert("In Navigate");
+  //alert("In Navigate");
   window.location.href = "Subscribe.html";
 }
