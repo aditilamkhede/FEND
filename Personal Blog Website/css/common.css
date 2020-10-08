@@ -1,20 +1,21 @@
 .menu, .footer {
   display: flex;
   flex-direction: row;
-  background-color: #8A2BE2;/*#455388;*/
+  background-color: white;/*#8A2BE2;/*#455388;*/
   /*border-radius: 1rem;*/
   justify-content: flex-end;
   align-items: center;
   height: 100%;
   width: 100%;
+  border: solid 1px #8A2BE2;
 }
 .ftCopy {
-  color: white;
+  color: #8A2BE2;
   text-align: center;
   margin-right: 1rem;
 }
 .ftName {
-  color: white;
+  color: #8A2BE2;/*white;*/
   text-align: left;
   flex-grow: 1;
   margin-left: 1rem;
@@ -24,12 +25,12 @@
 }
 .logo {
   flex: 1;
-  color: white;
+  color: #8A2BE2;/*white;*/
   font-size: 20px;
   margin-left: 1rem;
 }
 .navItem a {
   text-decoration: none;
-  color: white;
+  color: #8A2BE2;
   font-size: 17px;
 }
